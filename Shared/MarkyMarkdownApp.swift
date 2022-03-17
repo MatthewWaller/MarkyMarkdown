@@ -1,17 +1,1 @@
-//
-//  MarkyMarkdownApp.swift
-//  Shared
-//
-//  Created by Matthew Waller on 3/16/22.
-//
-
-import SwiftUI
-
-@main
-struct MarkyMarkdownApp: App {
-    var body: some Scene {
-        DocumentGroup(newDocument: MarkyMarkdownDocument()) { file in
-            ContentView(document: file.$document)
-        }
-    }
-}
+import SwiftUI; import UniformTypeIdentifiers; @main struct MarkyMarkdownApp: App { var body: some Scene { DocumentGroup(newDocument: MarkyMarkdownDocument()) { file in ContentView(document: file.$document) } } }; extension UTType { static var exampleText: UTType { UTType(importedAs: "com.example.plain-text") } }; struct MarkyMarkdownDocument: FileDocument { var text: String; init(text: String = "Hello, world!") { self.text = text }; static var readableContentTypes: [UTType] { [.exampleText] }; init(configuration: ReadConfiguration) throws { guard let data = configuration.file.regularFileContents, let string = String(data: data, encoding: .utf8) else { throw CocoaError(.fileReadCorruptFile) }; text = string }; func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper { let data = text.data(using: .utf8)!; return .init(regularFileWithContents: data) } }; struct ContentView: View { @Binding var document: MarkyMarkdownDocument; var markdown: AttributedString { (try? AttributedString(markdown: document.text, options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace))) ?? AttributedString() }; var body: some View { GeometryReader { proxy in if proxy.size.height > proxy.size.width { VStack { TextEditor(text: $document.text); Text(markdown).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading) .padding() .background(.thinMaterial) } } else { HStack { TextEditor(text: $document.text); Text(markdown).frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading).padding().background(.thinMaterial)}}}}}

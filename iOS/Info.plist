@@ -28,7 +28,7 @@
 			<dict>
 				<key>public.filename-extension</key>
 				<array>
-					<string>exampletext</string>
+					<string>md</string>
 				</array>
 			</dict>
 		</dict>

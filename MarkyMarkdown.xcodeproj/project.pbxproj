@@ -9,18 +9,12 @@
 /* Begin PBXBuildFile section */
 		DAAA10F227E2CA98006D4FE3 /* MarkyMarkdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA10DE27E2CA96006D4FE3 /* MarkyMarkdownApp.swift */; };
 		DAAA10F327E2CA98006D4FE3 /* MarkyMarkdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA10DE27E2CA96006D4FE3 /* MarkyMarkdownApp.swift */; };
-		DAAA10F427E2CA98006D4FE3 /* MarkyMarkdownDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA10DF27E2CA96006D4FE3 /* MarkyMarkdownDocument.swift */; };
-		DAAA10F527E2CA98006D4FE3 /* MarkyMarkdownDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA10DF27E2CA96006D4FE3 /* MarkyMarkdownDocument.swift */; };
-		DAAA10F627E2CA98006D4FE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA10E027E2CA96006D4FE3 /* ContentView.swift */; };
-		DAAA10F727E2CA98006D4FE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA10E027E2CA96006D4FE3 /* ContentView.swift */; };
 		DAAA10F827E2CA98006D4FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAA10E127E2CA98006D4FE3 /* Assets.xcassets */; };
 		DAAA10F927E2CA98006D4FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAA10E127E2CA98006D4FE3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DAAA10DE27E2CA96006D4FE3 /* MarkyMarkdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkyMarkdownApp.swift; sourceTree = "<group>"; };
-		DAAA10DF27E2CA96006D4FE3 /* MarkyMarkdownDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkyMarkdownDocument.swift; sourceTree = "<group>"; };
-		DAAA10E027E2CA96006D4FE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAAA10E127E2CA98006D4FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAAA10E627E2CA98006D4FE3 /* MarkyMarkdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkyMarkdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAA10E927E2CA98006D4FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,8 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				DAAA10DE27E2CA96006D4FE3 /* MarkyMarkdownApp.swift */,
-				DAAA10DF27E2CA96006D4FE3 /* MarkyMarkdownDocument.swift */,
-				DAAA10E027E2CA96006D4FE3 /* ContentView.swift */,
 				DAAA10E127E2CA98006D4FE3 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -192,9 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAAA10F427E2CA98006D4FE3 /* MarkyMarkdownDocument.swift in Sources */,
 				DAAA10F227E2CA98006D4FE3 /* MarkyMarkdownApp.swift in Sources */,
-				DAAA10F627E2CA98006D4FE3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAAA10F527E2CA98006D4FE3 /* MarkyMarkdownDocument.swift in Sources */,
 				DAAA10F327E2CA98006D4FE3 /* MarkyMarkdownApp.swift in Sources */,
-				DAAA10F727E2CA98006D4FE3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
