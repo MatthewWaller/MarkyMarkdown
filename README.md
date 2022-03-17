@@ -1,5 +1,5 @@
 # MarkyMarkdown
-An entire markdown app in a single line
+An entire markdown app in a single line of Swift code.
 
 - [x] Works for iPhone
 - [x] Works for iPad
